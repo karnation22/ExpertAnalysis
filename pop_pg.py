@@ -234,7 +234,6 @@ def analytics(LET):
             elif(LET=="B"): cursor.execute(INSERT_ANALYTICS_TABLE.format(s_id,None,None,json.dumps(OUTP_DATA),True,None,None,None,None))
             elif(LET=="C"): cursor.execute(INSERT_ANALYTICS_TABLE.format(s_id,None,None,None,None,json.dumps(OUTP_DATA),True,None,None))
             else: cursor.execute(INSERT_ANALYTICS_TABLE.format(s_id,None,None,None,None,None,None,json.dumps(OUTP_DATA),True))
-            return
 
             #for item_group in all_items:
             #    for item in item_group:

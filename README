@@ -2,7 +2,6 @@ A. Expert Curation
 B. S4 to S1 Funnel
 C. Bias Weights For Each Expert
 D. Question Predictive Power
-E. Anonymize Users
 
 RUN python3 pop_pg.py - 
 

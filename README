@@ -4,4 +4,6 @@ C. Bias Weights For Each Expert
 D. Question Predictive Power
 E. Anonymize Users
 
-NOTE: Copy/Paste Relevant Files to the same folder the script requires 
+RUN python3 pop_pg.py - 
+
+NOTE: Only wireframe set up... 

@@ -1,0 +1,22 @@
+Operating leverage: 0.0042
+News momentum to catch investor attention: 0.0299
+Potential trade/ strategic sales to corporates: 0.049
+Clarity of vision: 0.0344
+Team dynamics: 0.0183
+Network: 0.0024
+Cultural values: 0.0481
+Motivation: 0.0015
+Founder Reserve & Life-cycle: 0.0302
+Time Commitment: 0.1151
+Knowledge of customer: 0.0999
+Key man risk: 0.0524
+Revenue: 0.0229
+Humility / arrogance of founders: 0.0673
+% net worth invested: 0.0032
+Funding Pipeline: 0.0143
+Learnability of management team: 0.0107
+Market Size & Growth rate: 0.0667
+Margin structure: 0.2879
+Potential vendor possibility with Corporates: 0.0154
+Attractive valuation for new investors: 0.0172
+Value Propostion: 0.0092

@@ -1,0 +1,15 @@
+Go Plus: 0.0667
+Popular Chips: 0.1333
+FitThree: 0.2
+AIRPORTELs: 0.2667
+Canopy Power Pte. Ltd.: 0.3333
+repup.co: 0.4
+gridComm: 0.4667
+University Living Accommodation Pvt Ltd: 0.5333
+PHI: 0.6
+Got It: 0.6667
+Juno Clinic: 0.7333
+Limitless: 0.8
+EmotionReader: 0.8667
+SuperFan.Ai: 0.9333
+Singapore E-Business Pte Ltd: 1.0

@@ -1,0 +1,66 @@
+Sherpa Funds Technology: 0.0152
+Astra IT, INC - Czar Securities: 0.0303
+popular chips: 0.0455
+101 career: 0.0606
+Cheqqme: 0.0758
+Brightfox learning: 0.0909
+Onspon: 0.1061
+BlueLotus360: 0.1212
+CoPro: 0.1364
+Repup: 0.1515
+Superfan: 0.1667
+Discount monkey: 0.1818
+Fittree: 0.197
+Triputhao: 0.2121
+Hashprep: 0.2273
+Pingal Technologies Pvt Limited: 0.2424
+Kenyt.ai: 0.2576
+Limitless: 0.2727
+Drones Tech Lab: 0.2879
+BlobCity, Inc: 0.303
+Bank2grow.com: 0.3182
+Invento Robotics: 0.3333
+Eunimart Crossborder Pte Ltd: 0.3485
+Blonk: 0.3636
+SmartClean Technologies Pte Ltd: 0.3788
+Medinfi Healthcare Pvt Ltd: 0.3939
+Singapore E-Business Pte Ltd: 0.4091
+Luminociti Networks: 0.4242
+OhPhish Technologies Private Limited: 0.4394
+HeartSmart: 0.4545
+GetPY Analytics: 0.4697
+Canopy Power Pte. Ltd.: 0.4848
+forBinary: 0.5
+Juno Clinic: 0.5152
+GroSum: 0.5303
+Velox Network Pte Ltd: 0.5455
+Solarite Technologies Pte. Ltd.: 0.5606
+EmotionReader: 0.5758
+Pilot Automotive Labs: 0.5909
+Tesseract Global Technologies Pvt Ltd: 0.6061
+PriceMap: 0.6212
+HyperXchange: 0.6364
+PHI: 0.6515
+MIFON: 0.6667
+Got It: 0.6818
+Air Freight Bazaar: 0.697
+Sepio Products: 0.7121
+Quickscrum: 0.7273
+Go Plus: 0.7424
+Brisil Technologies Private Limited: 0.7576
+gridComm: 0.7727
+GamerHours: 0.7879
+BotFactory: 0.803
+carmen automotive pte ltd: 0.8182
+NayaGaadi: 0.8333
+AIRPORTELs: 0.8485
+Woofyz Pet Services Pvt Ltd: 0.8636
+Alakazam: 0.8788
+Stones2Milestones: 0.8939
+Into23: 0.9091
+GetFly: 0.9242
+University Living Accommodation Pvt Ltd: 0.9394
+Ayoslide: 0.9545
+FINIZZ: 0.9697
+BYKidO: 0.9848
+Waitrr: 1.0

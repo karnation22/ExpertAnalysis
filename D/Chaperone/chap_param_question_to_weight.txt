@@ -1,0 +1,25 @@
+Addressable Market Size: 0.0384
+Does the business model has high level of operating leverage & scalability potential ?: 0.0428
+What is the level of competition in terms of alternatives available ?: 0.0365
+How do you think is the ability of the team to manage risks with Plan B ?: 0.0466
+How well is the problem identified and defined?: 0.0481
+Product Uniqueness: 0.0356
+Are the business metrics clearly defined: 0.0428
+What is the overall feasibility of the business going forward ?: 0.0519
+What is the level of uniqueness in the proposition for the venture?: 0.0386
+Go to market plan strength: 0.0344
+How would you rate the likability & connect with the Founder and his authenticity?: 0.0348
+Additional Comments: 0.0302
+Technology Barrier: 0.0356
+What is the strength of the competitive advantage in the business model?: 0.0398
+How would you rate the quality of presentation deck in terms of clarity, scope, visual impact & simplicity ?: 0.0405
+What is the level of sustainability of the competitive advantage in the next 24 months?: 0.0371
+What would you say is your ‘Unfair Advantage’ that would add competitive advantage vs anyone who could start the same venture ?: 0.0439
+Are the business milestones for the next 24 months exciting?: 0.0404
+How high are the defensible technology barriers in the business? (High being 4): 0.0416
+What is the level of pain area felt / perceived by the target customers / consumers?: 0.0409
+Relevant Industry/market background of team: 0.0392
+How did you find the overall presentation quality in terms of clarity and impact through communication ?: 0.0462
+How feasible do you think is the Go To Market plan in next 12-18 month timeframe ?: 0.0446
+Revenue Stage: 0.0388
+What is the level of understanding and clarity of the financial projections by the team ?: 0.0305

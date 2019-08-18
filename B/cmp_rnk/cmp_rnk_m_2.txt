@@ -1,0 +1,1 @@
+{'FitThree': 0.2, 'SuperFan.Ai': 0.9333, 'Juno Clinic': 0.7333, 'University Living Accommodation Pvt Ltd': 0.5333, 'Limitless': 0.8, 'Got It': 0.6667, 'PHI': 0.6, 'Canopy Power Pte. Ltd.': 0.3333, 'gridComm': 0.4667, 'Go Plus': 0.0667, 'EmotionReader': 0.8667, 'Singapore E-Business Pte Ltd': 1.0, 'AIRPORTELs': 0.2667, 'Popular Chips': 0.1333, 'repup.co': 0.4}

@@ -1,0 +1,12 @@
+Margin structure: 0.28790877593600234
+Time Commitment: 0.11510182448916399
+Knowledge of customer: 0.09987655189232056
+Humility / arrogance of founders: 0.06726114776379409
+Market Size & Growth rate: 0.06673334614505252
+Key man risk: 0.052393189591581214
+Potential trade/ strategic sales to corporates: 0.04900122284368937
+Cultural values: 0.048067274871783146
+Clarity of vision: 0.03441093034005964
+Founder Reserve & Life-cycle: 0.030167139135916034
+News momentum to catch investor attention: 0.029853176154953993
+Revenue: 0.022896398009275575

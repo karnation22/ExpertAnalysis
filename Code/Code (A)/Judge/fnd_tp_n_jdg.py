@@ -55,6 +55,18 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
     with open(PATH_DATA,'r') as f_path:
         json_f = f_path.read()
         twoDarr = json.loads(json_f)
+    inp_df = pd.DataFrame()
+    for item in twoDarr:
+        for item2 in item:
+            inp_d = {}
+            for item3 in item2:
+                inp_d['company_name'] = item3[0]
+                inp_d['startup_name'] = item3[2]
+                if(not(item3[4]==None)): inp_d[item3[3]] = item3[4]
+                else: inp_d[item3[3]] = item3[5]
+                #print(inp_d)
+                inp_df=inp_df.append(inp_d,ignore_index=True)
+        print(inp_df)
     #rat_cmp_exp = pd.read_csv(norm)
     outp_arr = ['testingfnd_tp_n_jdg..']
     ## Run the analytics... find top n=3 experts in judge round... 

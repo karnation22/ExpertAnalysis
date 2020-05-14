@@ -3,6 +3,6 @@ B. S4 to S1 Funnel
 C. Bias Weights For Each Expert
 D. Question Predictive Power
 
-RUN python3 pop_pg.py - 
+RUN python3 pop_pg.py 
 
 NOTE: Only wireframe set up... 

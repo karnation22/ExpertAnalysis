@@ -9,8 +9,8 @@ import pickle
 import os, json, sys
 from sklearn.linear_model import LinearRegression as LR
 from collections import Counter
-## MX_SCR = 5  normalizing score
-## OFFST = 1 # offset value (avoids zero ratings)
+MX_SCR = 5  normalizing score
+OFFST = 1 # offset value (avoids zero ratings)
 SIM = 0.90 # 90% similarity for now
 TOP_PERC = 0.90 #want to find top k params to maintiain .90
 
@@ -137,12 +137,12 @@ def main():
             cmp_rnk_d_2[key] = vl
     brd_scrs = get_avg_brda_scrs(cmp_rnk_d_1, cmp_rnk_d_2)
     exp_evl_pd_df = pd.read_csv('jdg_nrm.csv')
-    #### exp_evl_pd_df = preproc(exp_evl_pd_df)
+    exp_evl_pd_df = preproc(exp_evl_pd_df)
     nm_chp_wght_tbl = pd.read_csv('jdg_wght_tble_exp_qs.csv')
     nrm_exp_evl_np_X, nrm_exp_evl_np_Y, col_vals = nrmlze_exp_evl(exp_evl_pd_df, nm_chp_wght_tbl, brd_scrs)
     per_model = train_per(nrm_exp_evl_np_X, nrm_exp_evl_np_Y)
     model_params = per_model.coef_
-    ## model_params /= sum(model_params)
+    model_params /= sum(model_params)
     model_params = list(enumerate(list(np.exp(model_params) / sum(np.exp(model_params)))))
     s_m_p = sum(list(map(lambda tup: tup[1], model_params))) # should be ~1.0
     model_params_v_s = sorted(model_params, key=lambda tup: tup[1], reverse=True)
@@ -152,7 +152,6 @@ def main():
     param_to_wght = {}
     for p_i in range(len(model_params)):
         param_to_wght[col_vals[p_i]] = round(model_params[p_i][1], 4)
-    ##print(param_to_wght)
     with open('judge_param_question_to_weight.txt', 'w') as f_prm_wght:
         outp_l = []
         for q_p in param_to_wght:

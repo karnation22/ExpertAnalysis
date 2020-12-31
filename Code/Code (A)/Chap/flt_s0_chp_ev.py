@@ -244,7 +244,7 @@ def main():
     outp_arr = ['testingflt_chp_ev...'] ## THE ACTUAL OUTPUT.
 
     ###### THE ACTUAL ANALYTICS PROCESS ###### - normalize chaperone data 1-4 --> 0.25-1.0
-    '''chp_rst_pd_dt = pd.read_excel(chp_sheet, sheet_name=res)
+    chp_rst_pd_dt = pd.read_excel(chp_sheet, sheet_name=res)
     chp_rnk_pd_dt = pd.read_excel(chp_sheet, sheet_name=rnk)
     rnk_col_len = len(chp_rnk_pd_dt.columns)
     chp_rnk_pd_dt1,chp_rnk_pd_dt2=chp_rnk_pd_dt.iloc[:,range(2)],chp_rnk_pd_dt.iloc[:,range(rnk_col_len-2,rnk_col_len)]
@@ -262,7 +262,7 @@ def main():
     
     outp_df = pre_proc_data(chp_rst_pd_dt).dropna()
     print('outp_df: ', outp_df)
-    outp_df.to_csv('chap_norm.csv')'''
+    outp_df.to_csv('chap_norm.csv')
     ##########################################
 
     PATH_WRT_BCK = os.path.join(os.getcwd(),'pop_pg.data') #after the change...
@@ -270,8 +270,8 @@ def main():
     with open(PATH_WRT_BCK,'w+') as f_path_w:
         f_path_w.write(json.dumps(outp_arr))
 
-    #print(chp_rst_pd_dt)
-    #print("g_c_l(1): ", g_c_l(1))
+    print(chp_rst_pd_dt)
+    print("g_c_l(1): ", g_c_l(1))
     
 
 main()

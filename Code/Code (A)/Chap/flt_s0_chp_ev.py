@@ -13,7 +13,7 @@ import json
 
 NUMER_DATA = ['D','E','F','G','AA','AB','AF','AR','AS']
 CAT_ORD_DATA = ['H','I','O','AC','AD','AT','AU','AV','AW','AX','AY','AZ']
-## BIN_POS = ['J','K','L','M','R','S','T','U','AI']
+BIN_POS = ['J','K','L','M','R','S','T','U','AI']
 BIN_PRES = ['W','X']
 COMM_DATA = ['AE','BA']
 ROLES = ['mentor', 'expert', 'tech', 'judge']
@@ -250,9 +250,9 @@ def main():
     chp_rnk_pd_dt1,chp_rnk_pd_dt2=chp_rnk_pd_dt.iloc[:,range(2)],chp_rnk_pd_dt.iloc[:,range(rnk_col_len-2,rnk_col_len)]
     chp_rnk_pd_dt1.columns, chp_rnk_pd_dt2.columns = chp_rnk_pd_dt1.iloc[0,], chp_rnk_pd_dt2.iloc[0,]
     chp_rnk_pd_dt1, chp_rnk_pd_dt2 = chp_rnk_pd_dt1.iloc[1:,], chp_rnk_pd_dt2.iloc[1:,]
-    print(chp_rnk_pd_dt)
-    print(chp_rnk_pd_dt1)
-    print(chp_rnk_pd_dt2)
+    ## print(chp_rnk_pd_dt)
+    ## print(chp_rnk_pd_dt1)
+    ## print(chp_rnk_pd_dt2)
     
     chp_rst_pd_dt.columns = chp_rst_pd_dt.iloc[0]
     chp_rst_pd_dt = chp_rst_pd_dt.drop(chp_rst_pd_dt.index[0],axis=0)

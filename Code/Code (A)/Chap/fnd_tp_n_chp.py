@@ -85,7 +85,7 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
         for nm, scr in sorted(least_common_2.items(), key=lambda itm: itm[1]):
             scr = round(scr, 4)
             lst_cmmn_2 += "{}: {}\n\n".format(nm, scr)
-        ## lst_cmmn_2 = sorted(lst_cmmn_2, key=lambda tup: tup[1])
+        lst_cmmn_2 = sorted(lst_cmmn_2, key=lambda tup: tup[1])
         f_names_2.write(lst_cmmn_2)
     return
     ########################

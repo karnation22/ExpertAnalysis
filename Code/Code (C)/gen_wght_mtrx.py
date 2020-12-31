@@ -79,7 +79,6 @@ def main():
         twoDarr = json.loads(json_f)
     outp_arr = ['gen_wght_mtrx_outp']
     ## FIND RELATIVE ACCURACY OF EACH EXPERT ###
-    '''
     scr_sht_exp_cmp_nm = pd.read_csv('jdg_nrm.csv')
     ## scr_sht_exp_cmp_nm = preproc_scr_sht_exp_cmp_nm(scr_sht_exp_cmp_nm)
     print('columns: ', scr_sht_exp_cmp_nm.columns)
@@ -89,7 +88,7 @@ def main():
     exp_comp_pd_df = populate_weight_dictionary(scr_sht_exp_cmp_nm)#.set_index('name')
     print(exp_comp_pd_df.head())
     exp_comp_pd_df.to_csv('jdg_wght_tble_exp_qs.csv')
-    return'''
+    return
     #############################################
 
     PATH_WRT_BCK = os.getcwd()+'pop_pg.data' #after the change...

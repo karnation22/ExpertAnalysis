@@ -18,7 +18,7 @@ def main_ranker(xlsx_sht_nm, sht_nm):
     
     cmp_rnk_1_m = dict([(comp, round((nm_rows-ind)/nm_rows, 4) ) for ind,comp in enumerate(cmp_rnk_1)])
     cmp_rnk_2_m = dict([(comp, round((nm_rows-ind)/nm_rows, 4) ) for ind,comp in enumerate(cmp_rnk_2)])
-    #### sprint("cmp_df: ", cmp_df, type(cmp_df))
+    ## print("cmp_df: ", cmp_df, type(cmp_df))
     ## print("cmp_rnk_1: ", cmp_rnk_1)
     ## print("cmp_rnk_2: ", cmp_rnk_2)
     ## print("cmp_rnk_1_m", cmp_rnk_1_m)

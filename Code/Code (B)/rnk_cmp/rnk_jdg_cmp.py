@@ -31,9 +31,9 @@ def main_ranker(xlsx_sht_nm, sht_nm):
     with open("jdg_cmp_rnk_m_2.txt", "w") as f_cmp_rnk_2:
         for cmp_nm, cmp_sc in sorted(cmp_rnk_2_m.items(), key=lambda tup: tup[1]):
             f_cmp_rnk_2.write("{}: {}\n".format(cmp_nm, cmp_sc))
-    ##print("nm_rows: ", nm_rows)
-    ##print("nm_rows: ", nm_rows)
-    ##print("cmp_rnk_pd",cmp_rnk_pd)
+    ## print("nm_rows: ", nm_rows)
+    ## print("nm_rows: ", nm_rows)
+    ## print("cmp_rnk_pd",cmp_rnk_pd)
     
     ## Main Ranker Judge ##
     os.chdir('../../..')

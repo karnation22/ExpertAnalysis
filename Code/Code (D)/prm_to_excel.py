@@ -20,7 +20,7 @@ def main():
         print(inp_df)
     outp_arr = ['prm_to_excel_fl']
 
-    '''with open('chaperone_param_question_to_weight.txt', 'r') as f_chap:
+    with open('chaperone_param_question_to_weight.txt', 'r') as f_chap:
         f_chap_l = f_chap.readlines()
         chp_dct = {}
         for itm in f_chap_l:
@@ -38,7 +38,7 @@ def main():
     print(jdg_dct)
     chp_pd, jdg_pd = pd.DataFrame(data=chp_dct), pd.DataFrame(data=jdg_dct)
     chp_pd.to_csv('chaperone_parameters_to_values.csv')
-    jdg_pd.to_csv('judge_parameters_to_values.csv')'''
+    jdg_pd.to_csv('judge_parameters_to_values.csv')
 
     PATH_WRT_BCK = os.getcwd()+'pop_pg.data' #after the change...
     with open(PATH_WRT_BCK,'w+') as f_path_w:

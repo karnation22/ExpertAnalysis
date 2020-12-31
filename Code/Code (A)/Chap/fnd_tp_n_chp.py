@@ -7,8 +7,8 @@ from sys import maxsize
 
 
 def wght_sum(wghts, v_l):
-    print('len(wghts): ', wghts, len(wghts))
-    print('len(v_l): ', v_l, len(v_l))
+    ## print('len(wghts): ', wghts, len(wghts))
+    ## print('len(v_l): ', v_l, len(v_l))
     assert(len(wghts)==len(v_l))
     assert(sum(wghts)==1.0)
     return sum([wghts[i]*v_l[i] for i in range(len(wghts))])
@@ -60,7 +60,7 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
     outp_arr = ['testingflt_tp...']
 
     ## RUN THE ANALYTICS... return top n=3 most accurate chaperones.. ##
-    '''
+    
     with open('cmp_rnk_m_1.txt', 'r') as f_cmp_rnk_1:
         cmp_rnk_m_1 = f_cmp_rnk_1.read()
         cmp_rnk_m_1 = eval(cmp_rnk_m_1[cmp_rnk_m_1.index("{"):])
@@ -87,7 +87,7 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
             lst_cmmn_2 += "{}: {}\n\n".format(nm, scr)
         ## lst_cmmn_2 = sorted(lst_cmmn_2, key=lambda tup: tup[1])
         f_names_2.write(lst_cmmn_2)
-    return'''
+    return
     ########################
 
     PATH_WRT_BCK = os.getcwd()+'pop_pg.data' #after the change...

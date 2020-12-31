@@ -119,7 +119,7 @@ def main():
         print(inp_df)
     outp_arr = ['det_wght_ech_q...']
     ## RUN LINEAR REGRESSION - FIND RELATIVE WEIGHTS OF EACH QUESTION
-    '''with open('jdg_cmp_rnk_m_1.txt', 'r') as f_cmp_rnk_1:
+    with open('jdg_cmp_rnk_m_1.txt', 'r') as f_cmp_rnk_1:
         cmp_rnk_L_1 = f_cmp_rnk_1.read().strip().split('\n')
         print(cmp_rnk_L_1)
         cmp_rnk_d_1 = {}
@@ -157,7 +157,7 @@ def main():
         outp_l = []
         for q_p in param_to_wght:
             outp_l.append("{}: {}\n".format(q_p, param_to_wght[q_p]))
-        f_prm_wght.writelines(outp_l)'''
+        f_prm_wght.writelines(outp_l)
     ####################################################################
 
     PATH_WRT_BCK = os.getcwd()+'pop_pg.data' #after the change...

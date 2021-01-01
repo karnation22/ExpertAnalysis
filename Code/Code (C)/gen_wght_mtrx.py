@@ -4,13 +4,13 @@ import os, json, sys
 LP = 0
 
 def create_pd_df(exp_comp_d_d):
-    ## exp_comp_pd_df = pd.DataFrame(columns=cols_q)
+    exp_comp_pd_df = pd.DataFrame(columns=cols_q)
     exp_l = []
     for name in exp_comp_d_d:
         ser_v = pd.Series(exp_comp_d_d[name]) #dictionary input..
         nm_ser = pd.Series(index=['name'], data=[name])
         ser_v = nm_ser.append(ser_v)
-        ## exp_comp_pd_df.append(ser_v)
+        exp_comp_pd_df.append(ser_v)
         exp_l.append(ser_v)
     exp_comp_pd_df = pd.DataFrame(exp_l)
     print('\n\n')
@@ -80,13 +80,12 @@ def main():
     outp_arr = ['gen_wght_mtrx_outp']
     ## FIND RELATIVE ACCURACY OF EACH EXPERT ###
     scr_sht_exp_cmp_nm = pd.read_csv('jdg_nrm.csv')
-    ## scr_sht_exp_cmp_nm = preproc_scr_sht_exp_cmp_nm(scr_sht_exp_cmp_nm)
-    print('columns: ', scr_sht_exp_cmp_nm.columns)
-    print('\n\n')
-    print(scr_sht_exp_cmp_nm.head())
-    
+    scr_sht_exp_cmp_nm = preproc_scr_sht_exp_cmp_nm(scr_sht_exp_cmp_nm)
+    ## print('columns: ', scr_sht_exp_cmp_nm.columns)
+    ## print('\n\n')
+    ## print(scr_sht_exp_cmp_nm.head())
+    ## print(exp_comp_pd_df.head
     exp_comp_pd_df = populate_weight_dictionary(scr_sht_exp_cmp_nm)#.set_index('name')
-    print(exp_comp_pd_df.head())
     exp_comp_pd_df.to_csv('jdg_wght_tble_exp_qs.csv')
     return
     #############################################

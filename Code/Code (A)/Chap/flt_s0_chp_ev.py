@@ -19,7 +19,7 @@ COMM_DATA = ['AE','BA']
 ROLES = ['mentor', 'expert', 'tech', 'judge']
 NLO,NHI=1,4
 wlo,wmed,whi='low','med','high'
-chp_sheet = 'Startup-O Chaperone Evaluation Sheet- 1 MAR 2018.xlsx'
+chp_sheet = 'Startup-O Chaperone Evaluation Sheet- 1 MAR 2018.csv'
 res,rnk = 'results','Ranking test'
 sia_ana = SIA()
 

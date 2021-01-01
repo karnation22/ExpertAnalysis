@@ -79,12 +79,12 @@ EXP_Q = [
 ]
 
 JUD_Q = [
-    "'Value Propostion'",	"'Market Size & Growth rate'", "'Operating leverage'",	"'Margin structure'",	"'Revenue'",	"'Clarity of vision'", "'Knowledge of customer'", "'Team dynamics'",
-    "'Key man risk'",	"'Humility / arrogance of founders'",	"'Cultural values'", "'Learnability of management team'",	"'Founder Reserve & Life-cycle'",	"'Funding Pipeline'",	"'Time Commitment'",	"'% net worth invested'",
-    "'Motivation'",	"'Potential vendor possibility with Corporates'",	"'Potential trade/ strategic sales to corporates'",	"'Attractive valuation for new investors'",	"'News momentum to catch investor attention'",	
-    "'Network'",	"'Founder orientation'",	"'Cash generating potential'",	"'Skin in the game'",	"'Staying power'", "'Corporate interest'",	"'Team longevity and quality'",	"'Customer understanding'",	"'VC proposition'",
-    "'Overall Investibility'", "'Overall Assessment Comments'"
-
+    "'Value Propostion'", "'Market Size & Growth rate'", "'Operating leverage'", "'Margin structure'",	"'Revenue'",	"'Clarity of vision'", 
+    "'Knowledge of customer'", "'Team dynamics'","'Key man risk'","'Humility / arrogance of founders'",	"'Cultural values'", "'Learnability of management team'",
+    "'Founder Reserve & Life-cycle'",	"'Funding Pipeline'", "'Time Commitment'", "'% net worth invested'","'Motivation'",
+    "'Potential vendor possibility with Corporates'",	"'Potential trade/ strategic sales to corporates'",	"'Attractive valuation for new investors'",	
+    "'News momentum to catch investor attention'", "'Network'",	"'Founder orientation'","'Cash generating potential'",	"'Skin in the game'", "'Staying power'", 
+    "'Corporate interest'", "'Team longevity and quality'", "'Customer understanding'",	"'VC proposition'","'Overall Investibility'", "'Overall Assessment Comments'"
 ]
 
 def generate_random_data():
@@ -163,7 +163,7 @@ def connect_and_load(bool_del):
         if(table_name=="assessments"):
             for role_d in roles_l:
                 for role_i in role_d:
-                    # print(INSRT_ASSMT_CLS.format("question", "a_number", q, rat))
+                    print(INSRT_ASSMT_CLS.format("question", "a_number", q, rat))
                     val_substr = f1_substr_val(role_d[role_i])
                     cursor.execute(INSRT_ASSMT_CLS+val_substr)
         if(table_name=="evaluations"):
@@ -174,9 +174,8 @@ def connect_and_load(bool_del):
             val_substr = f3_substr_val(names_l)
             cursor.execute(INSRT_STUP_CLS+val_substr)
     if(bool_del): cursor.execute(DEL_CONT)
-    ##cursor.commit()
-    ##conn.commit()
-    
+    cursor.commit()
+    conn.commit()
     conn.close()
     return
 

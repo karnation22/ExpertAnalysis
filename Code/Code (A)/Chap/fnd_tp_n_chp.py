@@ -7,8 +7,6 @@ from sys import maxsize
 
 
 def wght_sum(wghts, v_l):
-    ## print('len(wghts): ', wghts, len(wghts))
-    ## print('len(v_l): ', v_l, len(v_l))
     assert(len(wghts)==len(v_l))
     assert(sum(wghts)==1.0)
     return sum([wghts[i]*v_l[i] for i in range(len(wghts))])
@@ -52,23 +50,18 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
                 inp_d['startup_name'] = item3[2]
                 if(not(item3[4]==None)): inp_d[item3[3]] = item3[4]
                 else: inp_d[item3[3]] = item3[5]
-                #print(inp_d)
                 inp_df=inp_df.append(inp_d,ignore_index=True)
         print(inp_df)
-    #rat_cmp_exp = pd.read_csv(norm)
-
+    rat_cmp_exp = pd.read_csv(norm)
     outp_arr = ['testingflt_tp...']
 
     ## RUN THE ANALYTICS... return top n=3 most accurate chaperones.. ##
-    
     with open('cmp_rnk_m_1.txt', 'r') as f_cmp_rnk_1:
         cmp_rnk_m_1 = f_cmp_rnk_1.read()
         cmp_rnk_m_1 = eval(cmp_rnk_m_1[cmp_rnk_m_1.index("{"):])
     with open('cmp_rnk_m_2.txt', 'r') as f_cmp_rnk_2:
         cmp_rnk_m_2 = f_cmp_rnk_2.read()
         cmp_rnk_m_2 = eval(cmp_rnk_m_2[cmp_rnk_m_2.index("{"):])
-    ## print(cmp_rnk_m_1)
-    ## print(cmp_rnk_m_2)
     cntr_exp_avg_diff_1 = get_counter_diff_pred(rat_cmp_exp, cmp_rnk_m_1, wghts)
     cntr_exp_avg_diff_2 = get_counter_diff_pred(rat_cmp_exp, cmp_rnk_m_2, wghts)
     least_common_1 = dict(cntr_exp_avg_diff_1.most_common()[:-n-1:-1])
@@ -79,7 +72,7 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
         for nm, scr in sorted(least_common_1.items(), key=lambda itm: itm[1]):
             scr = round(scr, 4)
             lst_cmmn_1 += "{}: {}\n\n".format(nm, scr)
-        ## lst_cmmn_1 = sorted(lst_cmmn_1, key=lambda tup: tup[1])
+        lst_cmmn_1 = sorted(lst_cmmn_1, key=lambda tup: tup[1])
         f_names_1.write(lst_cmmn_1)
     with open("{}_to_{}_top_{}_names_2.txt".format(st, en, n), 'w') as f_names_2:
         for nm, scr in sorted(least_common_2.items(), key=lambda itm: itm[1]):

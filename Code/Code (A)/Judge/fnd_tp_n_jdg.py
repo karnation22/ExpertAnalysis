@@ -6,7 +6,8 @@ from sys import maxsize
 #### For part (A), document findings, code, and output files in analysis.
 
 mn_wghts = [.3, .4, .1, .2]
-sub_wghts = [[.15, .3, .15, .15, .25], [.1, .2, .1, .15, .1, .1, .25], [.15, .3, .15, .2, .2], [.2, .1, .3, .1, .3]]
+sub_wghts = [[.15, .3, .15, .15, .25], [.1, .2, .1, .15, .1, .1, .25], 
+             [.15, .3, .15, .2, .2], [.2, .1, .3, .1, .3]]
 
 def lrn_wghts():
     wghts = []
@@ -19,8 +20,6 @@ def lrn_wghts():
     return wghts
 
 def wght_sum(wghts, v_l):
-    ## print('len(wghts): ', wghts, len(wghts))
-    ## print('len(v_l): ', v_l, len(v_l))
     assert(len(wghts)==len(v_l))
     assert(round(sum(wghts), 2)==1.0)
     return sum([wghts[i]*v_l[i] for i in range(len(wghts))])
@@ -46,8 +45,6 @@ def get_counter_diff_pred(rat_cmp_exp, cmp_rnk_m_1, wghts):
     cntr_exp_avg_diff = Counter(exp_avg_diff_1)
     return cntr_exp_avg_diff
 
-
-
 ## main function...
 def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
     ext = '//Code//Code (A)//Chap//fnd_tp_n_jdg.data'
@@ -67,10 +64,9 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
                 #print(inp_d)
                 inp_df=inp_df.append(inp_d,ignore_index=True)
         print(inp_df)
-    #rat_cmp_exp = pd.read_csv(norm)
+    rat_cmp_exp = pd.read_csv(norm)
     outp_arr = ['testingfnd_tp_n_jdg..']
     ## Run the analytics... find top n=3 experts in judge round... 
-    '''
     with open('jdg_cmp_rnk_m_1.txt', 'r') as f_cmp_rnk_1:
         cmp_rnk_m_1_p = f_cmp_rnk_1.readlines()
         cmp_rnk_m_1 = {}
@@ -95,22 +91,21 @@ def main_tp_n(norm, n, wghts=None, st='chap', en='chap'):
         for nm, scr in sorted(least_common_1.items(), key=lambda itm: itm[1]):
             scr = round(scr, 4)
             lst_cmmn_1 += "{}: {}\n\n".format(nm, scr)
-        ## lst_cmmn_1 = sorted(lst_cmmn_1, key=lambda tup: tup[1])
+        lst_cmmn_1 = sorted(lst_cmmn_1, key=lambda tup: tup[1])
         f_names_1.write(lst_cmmn_1)
     with open("{}_top_{}_names_2.txt".format(st, n), 'w') as f_names_2:
         for nm, scr in sorted(least_common_2.items(), key=lambda itm: itm[1]):
             scr = round(scr, 4)
             lst_cmmn_2 += "{}: {}\n\n".format(nm, scr)
-        ## lst_cmmn_2 = sorted(lst_cmmn_2, key=lambda tup: tup[1])
+        lst_cmmn_2 = sorted(lst_cmmn_2, key=lambda tup: tup[1])
         f_names_2.write(lst_cmmn_2)
-    return'''
-
+    return
     PATH_WRT_BCK = os.getcwd()+'pop_pg.data' #after the change...
     with open(PATH_WRT_BCK,'w+') as f_path_w:
         f_path_w.write(json.dumps(outp_arr))
 
 
 
-## m_wghts = lrn_wghts()
-## print('m_wghts: ', m_wghts)
-## main_tp_n('jud_nrm.csv', n=3, wghts=m_wghts, st='jdg')
+m_wghts = lrn_wghts()
+print('m_wghts: ', m_wghts)
+main_tp_n('jud_nrm.csv', n=3, wghts=m_wghts, st='jdg')

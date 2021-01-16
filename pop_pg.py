@@ -195,8 +195,8 @@ def parse_input_params():
 def analytics(LET):
     CODE_PATH = CODE_PATH_STR.format(LET)
     prms = config()
-    conn = pg2.connect(**prms)
-    cursor = conn.cursor()
+    comm = pg2.connect(**prms)
+    cursor = comm.cursor()
     ind = ANA_L.index(LET)
     for sub_dir,py_files in zip(SUB_DIR[ind],PY_FILES[ind]):
         for py_file in py_files:
@@ -240,7 +240,7 @@ def analytics(LET):
             #    print('\n')
     
     cursor.commit()        
-    conn.commit()            
+    comm.commit()            
 
 
     print('\n\n')

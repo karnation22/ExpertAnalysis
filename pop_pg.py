@@ -234,10 +234,10 @@ def analytics(LET):
             elif(LET=="C"): cursor.execute(INSERT_ANALYTICS_TABLE.format(s_id,None,None,None,None,json.dumps(OUTP_DATA),True,None,None))
             else: cursor.execute(INSERT_ANALYTICS_TABLE.format(s_id,None,None,None,None,None,None,json.dumps(OUTP_DATA),True))
 
-            #for item_group in all_items:
-            #    for item in item_group:
-            #        print("item: ",item)
-            #    print('\n')
+            for item_group in all_items:
+                for item in item_group:
+                    print("item: ",item)
+                print('\n')
     
     cursor.commit()        
     comm.commit()            

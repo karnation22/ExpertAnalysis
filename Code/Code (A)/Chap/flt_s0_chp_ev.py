@@ -27,7 +27,7 @@ qs =  [
     'Does the management believe in building a strong in-house tech team ?', 
     'Relevant Industry/market background of team', 
         'How well can team execute their presented plans ?', 
-        'What isthe level of understanding and clarity of the financial projections by the team ?', 
+        'What is the level of understanding and clarity of the financial projections by the team ?', 
         'Additional Comments', 
         'Potential Execution Risks', 
         'Are the hiring plans relevant to the roadmap and business growth ?', 
